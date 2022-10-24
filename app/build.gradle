@@ -46,6 +46,11 @@ android {
 }
 
 dependencies {
+    def media3_version = "1.0.0-beta02"
+    // For media playback using ExoPlayer
+    implementation "androidx.media3:media3-exoplayer:$media3_version"
+    // For exposing and controlling media sessions
+    implementation "androidx.media3:media3-session:$media3_version"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation "androidx.compose.ui:ui:$compose_version"
@@ -53,6 +58,7 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
     implementation 'androidx.activity:activity-compose:1.3.1'
+    implementation 'androidx.lifecycle:lifecycle-common:2.5.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

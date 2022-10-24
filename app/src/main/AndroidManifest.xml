@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.yakaska.flexplayer">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlexPlayer"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.FlexPlayer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
